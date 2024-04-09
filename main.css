@@ -1,0 +1,304 @@
+@import "./normalize.css";
+
+body
+{
+    background-color: #BDF400;
+    background: linear-gradient(#BDF400, #DBF970);
+}
+#header
+{
+    background-color: white;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.hidden_text
+{
+    font-size: 0;
+}
+
+
+#main
+{
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 1000px;
+}
+
+.navigation
+{
+    background-color: white;
+    float: left;
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.news_photo
+{
+    margin-left: 20px;
+}
+
+.main_text
+{
+    background-color: white;
+    float: left;
+    height: 100%;
+    width: 1550px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h3
+{
+    margin-left: 20px;
+}
+
+h5
+{
+    margin-left: 20px;
+}
+
+.read
+{
+    margin-left: 20px;
+}
+
+p
+{
+    margin-left: 20px;
+}
+
+.main_photo
+{
+    margin-left: 40px;
+    width: 500px;
+    height: 500px;
+}
+
+.view
+{
+    margin-left: 40px;
+    width: 635px;
+    height: 444px;
+}
+
+table, th, td
+{
+    border: 1px solid;
+}
+
+#footer
+{
+    background-color: #7B9E00;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 80px;
+}
+
+@media (max-width: 1880px) and (min-width: 540px)
+{
+    .navigation
+    {
+        background-color: white;
+        float: left;
+        height: 100%;
+        width: 20%;
+        margin-right: 1%;
+        font-size: 80%;
+    }
+    
+    
+    .main_photo
+    {
+        height: 478px;
+        width: 478px;
+        margin-left: 2%;
+    }
+
+    .main_text
+    {
+        background-color: white;
+        float: left;
+        height: 100%;
+        width: 70%;
+        margin-left: 2%;
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 430px)
+{
+    #header
+    {
+        background-color: white;
+        width: 80%;
+        height: 120px;
+        margin-top: 4%;
+        margin-left: 8%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        font-size: 80%;
+    }
+    .navigation
+    {
+        background-color: white;
+        float: left;
+        height: 100%;
+        width: 20%;
+        margin-right: 1%;
+        font-size: 80%;
+    }
+
+    td p
+    {
+        font-size: 2px;
+    }
+    th p
+    {
+        font-size: 2px;
+    }
+
+    th
+    {
+        height: 20px;
+        width: 20px;
+    }
+
+    table{
+        height: 90px;
+        width: 90px;
+    }
+
+    .main_photo
+    {
+        height: 209px;
+        width: 209px;
+        margin-left: 2%;
+    }
+
+    .main_text
+    {
+        background-color: white;
+        float: left;
+        height: 100%;
+        width: 70%;
+        margin-left: 1%;
+        font-size: 80%;
+    }
+}
+
+/*Galaxy Fold*/
+@media (max-width: 430px)
+{
+    /*Головна сторінка*/
+    #header
+    {
+        background-color: white;
+        width: 80%;
+        height: 120px;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        font-size: 65%;
+    }
+
+    #main
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 80%;
+    }
+
+    .navigation
+    {
+        margin-left: 20px;
+        background-color: white;
+        width: 100%;
+        height: 8%;
+        font-size: 80%;
+        margin-bottom: 2%;
+    }
+
+    .navigation ul.h li
+    {
+        display: inline;
+        margin-right: 5px; 
+    }
+
+    td p
+    {
+        font-size: 5px;
+    }
+    th p
+    {
+        font-size: 5px;
+    }
+
+    th
+    {
+        height: 20px;
+        width: 20px;
+    }
+
+    table{
+        height: 50px;
+        width: 50px;
+    }
+
+    .main_photo
+    {
+        height: 154px;
+        width: 154px;
+    }
+
+    .main_text
+    {
+        margin-left: 20px;
+        background-color: white;
+        height: 50%;
+        width: 100%;
+        font-size: 80%;
+    }
+
+    /*Розклад*/
+    table 
+    {
+        width: 50px;
+    }
+    /*Фотоальбом*/
+    .view
+    {  
+        height: 154px;
+        width: 154px;
+    }
+
+    .news_photo
+    {
+        height: 155px;
+        width: 205px;
+    }
+}
+/*Медіазапит для браузера Internet Explorer 10*/
+
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) 
+ {
+    .hidden_text
+    {
+        font-size: 100%;
+        text-align: center;
+    }
+}
